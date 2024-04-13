@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>secondcard</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    overflow: none;
+    box-sizing: border-box;
+}
+.container{
+    width: 100wh;
+    height: 100vh;
+    background-image: linear-gradient(to left bottom, #c9a0cc, #e5a5ba, #f0b1a9, #ebc2a2, #ded4aa);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 340px;
+    height: 470px;
+    background-color: white;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.box img{
+    width: 100%;
+    height: 30%;;
+    border-radius: 18px 18px 0px 0px;
+}
+
+.textbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 75%;
+    text-align: center;
+}
+
+.textbox p{
+    font-size: 0.8rem;
+}
+
+#smallbox{
+    width: 70%;
+    height: 10%;
+    background-color: rgb(183, 186, 195);
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+#payment{
+    border-radius: 20px;
+    background-color: #f0b1a9;
+    width: 40%;
+    height: 8%;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.cancelbox a{
+    text-decoration: none;
+    color: purple;
+}
+.leftbox{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.innerright{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.rightbox a{
+    text-decoration: none;
+
+}
+
+.innerleft img{
+    height: 70%;
+    width: 80%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+                <img src="icon.jpg" alt="icon">
+                <div class="textbox">
+                    <h2>Order Summary</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam voluptatem voluptas numquam ut ipsam odio eaque aperiam, unde dolorum alias!</p>
+                </div>
+                <div id="smallbox">
+                    <div class="leftbox">
+                        <div class="innerleft">
+                            <img src="fav.jpg" alt="fav">
+                        </div>
+                        <div class="innerright">
+                            <div class="up">
+                                <p>Annual Pay</p>
+                            </div>
+                            <div class="down">
+                                <p>400 per year</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightbox">
+                        <a href="#">Change</a>
+                    </div>
+            </div>
+                <button id="payment">Proceed to payment</button>
+            
+            <div class="cancelbox">
+                <a href="#">Cancel</a>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
